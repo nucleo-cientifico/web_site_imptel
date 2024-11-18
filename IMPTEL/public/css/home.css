@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+body{
+    background-color: #cfe7ff;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.imagens{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 15px;
+    width: 90%;
+}
+
+.logo{
+    width: 90px;
+    height: 70px;
+}
+
+.menu{
+   margin-right: 25px;
+   padding-top: 10px;
+   cursor: pointer;
+}
+
+.welcome{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.navBar{
+    position: relative;
+}
+
+.nav{
+    width: 97vw;
+    position: absolute;
+    top: -70px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    transition: transform 3s;
+    animation: mover-direita 3s;
+}
+
+.btn{
+    width: 90%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 8px;
+    padding: 10px;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+}
+
+.container{
+    margin: 40px auto 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    border-radius: 5px;
+    padding: 10px;
+    width: 89%;
+    display: block;
+}
+
+.img{
+   margin: auto;
+   display: block;
+   width: 60%;
+}
+
+.text{
+    text-align: justify;
+    max-width: 95%;
+    padding: 10px;
+    text-indent: 25px;
+    line-height: 22.5px;
+    font-family: sans-serif;
+}
+
+.btn-saber-mais{
+    width: 100px;
+    padding: 6px;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+}
+
+.btn-saber-mais:hover{
+    cursor: pointer;
+    background-color: #cfe7ff;
+    border: 1px solid rgba(0, 0, 0, 0.26);
+}
+
+.titulo{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    margin-top:40px;
+    margin-bottom: -30px;
+}
+
+.hidden{
+   display: none;
+}
+
+@keyframes mover-direita {
+    from{
+        transform: translateX(100%); 
+    }   
+    
+    to{
+        transform: translateX(0); 
+    }
+}

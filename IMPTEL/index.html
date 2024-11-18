@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imptel</title>
+    <link rel="stylesheet" href="public/css/home.css">
+    <link rel="stylesheet" href="public/css/media_queries.css">
+</head>
+<body onresize="mudarTela()">
+    <div>
+        <header>
+            <div class="imagens">
+                <img src="public/assets/logo_imptel.png" alt="Logo do IMPTEL" class="logo">
+
+                <img src="public/assets/icons8-cardápio.svg" alt="" class="menu">
+            </div>
+
+            <h1 class="welcome">Seja bem-vindo(a) ao IMPTEL</h1>
+
+            <div class="hidden navBar">
+                <nav class="nav">
+                    <a href="index.html" class="btn">Home</a>
+                    <a href="public/html/minha_conta.html" class="btn">Minha conta</a>
+                    <a href="#" class="btn">Sobre nós</a>
+                    <a href="#" class="btn">Notícias</a>
+                    <a href="#" class="btn">Contacte-nos</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <main>
+        <div class="container">
+            <img src="public/assets/images.jpeg" alt="Imagem do IMPTEL" class="img">
+            <p class="text">
+                O Instituto Médio Privado de Tecnologias (IMPTEL) é uma organização institucional criada em 2013, localizada em Luanda com o objectivo de educar e formar profissionais na área de informática e electrónica.
+                Actualmente, a sua sede localiza-se no Camama, tendo também uma filial em Viana.
+                O IMPTEL estimula os seus formandos, dandos-lhes incentivo para a evolução pessoal de e profissional cada indivíduo ao longo desses 4 anos de formação.
+            </p>
+
+            <button class="btn-saber-mais">Saber Mais</button>
+        </div>
+
+        <h1 class="titulo">Cursos Disponíveis</h1>
+
+        <div class="container">
+
+            <img src="public/assets/images (1).jpeg" alt="Imagem do curso" class="img">
+
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, mollitia saepe ratione provident tempora autem, excepturi placeat pariatur quam doloribus cum esse dolorem error. Tenetur rerum repellendus vel aspernatur suscipit.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus atque dicta maxime officia nulla officiis distinctio doloribus rerum ut optio aliquid, laboriosam ducimus neque labore sapiente, in voluptate! Sit, quia.
+            </p>
+
+            <button class="btn-saber-mais">Saber Mais</button>
+
+        </div>
+
+            <script>
+                let menu=document.querySelector('.menu')
+                let navBar=document.querySelector('.navBar')
+                let i=0
+                menu.addEventListener('click',()=>{
+                    navBar.classList.toggle('hidden')
+                    
+                    if(i==0){
+                        menu.setAttribute('src','public/assets/cancelar(1).png')
+                        menu.style.height='30px'
+                        menu.style.width='30px'
+                        menu.style.padding='25px 0px 0px 0px'
+                        i=1
+                    }
+                    
+                    else{
+                        menu.setAttribute('src','public/assets/icons8-cardápio.svg')
+                        i=0
+                    }
+                })
+
+                function mudarTela(){
+                    if(window.innerWidth<768){
+                        navBar.classList.add('hidden')
+                        menu.setAttribute('src','public/assets/icons8-cardápio.svg')
+                        i=0
+                    }
+
+                    else{
+                        navBar.classList.add('hidden')
+                    }
+                }
+            </script>
+        </div>
+    </main>
+</body>
+</html>
