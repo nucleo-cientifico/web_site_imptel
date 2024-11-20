@@ -43,8 +43,8 @@ body{
     display: flex;
     flex-direction: column;
     background-color: white;
-    transition: transform 3s;
-    animation: mover-direita 3s;
+    transition: transform 1.5s;
+    animation: mover-direita 1s;
 }
 
 .btn{
@@ -61,12 +61,13 @@ body{
 }
 
 .container{
-    margin: 40px auto 0 auto;
+    margin: 40px auto 40px auto;
     border: 1px solid rgba(0, 0, 0, 0.466);
     border-radius: 5px;
     padding: 10px;
     width: 89%;
     display: block;
+    background-color: #cfe7ff;
 }
 
 .img{
@@ -93,7 +94,7 @@ body{
 
 .btn-saber-mais:hover{
     cursor: pointer;
-    background-color: #cfe7ff;
+    background-color: #fff;
     border: 1px solid rgba(0, 0, 0, 0.26);
 }
 

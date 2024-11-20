@@ -22,9 +22,9 @@
                 <nav class="nav">
                     <a href="index.html" class="btn">Home</a>
                     <a href="public/html/minha_conta.html" class="btn">Minha conta</a>
-                    <a href="#" class="btn">Sobre nós</a>
-                    <a href="#" class="btn">Notícias</a>
-                    <a href="#" class="btn">Contacte-nos</a>
+                    <a href="public/html/sobre_nos.html" class="btn">Sobre nós</a>
+                    <a href="public/html/noticias.html" class="btn">Notícias</a>
+                    <a href="public/html/contactos.html" class="btn">Contacte-nos</a>
                 </nav>
             </div>
         </header>
@@ -36,7 +36,8 @@
             <p class="text">
                 O Instituto Médio Privado de Tecnologias (IMPTEL) é uma organização institucional criada em 2013, localizada em Luanda com o objectivo de educar e formar profissionais na área de informática e electrónica.
                 Actualmente, a sua sede localiza-se no Camama, tendo também uma filial em Viana.
-                O IMPTEL estimula os seus formandos, dandos-lhes incentivo para a evolução pessoal de e profissional cada indivíduo ao longo desses 4 anos de formação.
+                O IMPTEL estimula os seus formandos, dandos-lhes incentivo para a evolução pessoal e profissional ao longo desses 4 anos de formação com excelência. 
+                O IMPTEL têm formadores capacitados e incansáveis para dar continuidade a formação do seu filho.
             </p>
 
             <button class="btn-saber-mais">Saber Mais</button>
@@ -55,41 +56,9 @@
             <button class="btn-saber-mais">Saber Mais</button>
 
         </div>
-
-            <script>
-                let menu=document.querySelector('.menu')
-                let navBar=document.querySelector('.navBar')
-                let i=0
-                menu.addEventListener('click',()=>{
-                    navBar.classList.toggle('hidden')
-                    
-                    if(i==0){
-                        menu.setAttribute('src','public/assets/cancelar(1).png')
-                        menu.style.height='30px'
-                        menu.style.width='30px'
-                        menu.style.padding='25px 0px 0px 0px'
-                        i=1
-                    }
-                    
-                    else{
-                        menu.setAttribute('src','public/assets/icons8-cardápio.svg')
-                        i=0
-                    }
-                })
-
-                function mudarTela(){
-                    if(window.innerWidth<768){
-                        navBar.classList.add('hidden')
-                        menu.setAttribute('src','public/assets/icons8-cardápio.svg')
-                        i=0
-                    }
-
-                    else{
-                        navBar.classList.add('hidden')
-                    }
-                }
-            </script>
-        </div>
     </main>
+
+
+    <script src="public/js/index.js"></script>
 </body>
 </html>

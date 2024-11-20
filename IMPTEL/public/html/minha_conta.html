@@ -23,9 +23,9 @@
                 <nav class="nav">
                     <a href="../../index.html" class="btn">Home</a>
                     <a href="../html/minha_conta.html" class="btn">Minha conta</a>
-                    <a href="#" class="btn">Sobre nós</a>
-                    <a href="#" class="btn">Notícias</a>
-                    <a href="#" class="btn">Contacte-nos</a>
+                    <a href="../html/sobre_nos.html" class="btn">Sobre nós</a>
+                    <a href="noticias.html" class="btn">Notícias</a>
+                    <a href="contactos.html" class="btn">Contacte-nos</a>
                 </nav>
             </div>
         </header>
@@ -34,40 +34,9 @@
     <main>
         <div class="container">
             <h1   style="text-align: center;">Minha Conta</h1>
-            <script>
-                let menu=document.querySelector('.menu')
-                let navBar=document.querySelector('.navBar')
-                let i=0
-                menu.addEventListener('click',()=>{
-                    navBar.classList.toggle('hidden')
-                    
-                    if(i==0){
-                        menu.setAttribute('src','../assets/cancelar(1).png')
-                        menu.style.height='30px'
-                        menu.style.width='30px'
-                        menu.style.padding='25px 0px 0px 0px'
-                        i=1
-                    }
-                    
-                    else{
-                        menu.setAttribute('src','../assets/icons8-cardápio.svg')
-                        i=0
-                    }
-                })
-
-                function mudarTela(){
-                    if(window.innerWidth<768){
-                        navBar.classList.add('hidden')
-                        menu.setAttribute('src','../assets/icons8-cardápio.svg')
-                        i=0
-                    }
-
-                    else{
-                        navBar.classList.add('hidden')
-                    }
-                }
-            </script>
         </div>
     </main>
+
+    <script src="../js/minha_conta.js"></script>
 </body>
 </html>
